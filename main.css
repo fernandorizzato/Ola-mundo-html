@@ -26,13 +26,13 @@ li {
 
 .light-theme {
     color: #000000;
-    background: #ffffff;
+    background: #4ba848;
     --btnBg: var(--black);
     --btnFontColor: var(--white);
 }
 
 .dark-theme {
-    color: #ffffff;
+    color: #3e8b48;
     background: #000000;
     --btnBg: var(--white);
     --btnFontColor: var(--black);
