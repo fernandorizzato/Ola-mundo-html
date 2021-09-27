@@ -1,6 +1,15 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
 body {
-    font-family: monospace;
-    font-size: large;
+    background: var(--bg);
 }
 
 li {
@@ -13,4 +22,39 @@ li {
 
 #msg {
     font-family: monospace;
+}
+
+.light-theme {
+    color: #000000;
+    background: #ffffff;
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.dark-theme {
+    color: #ffffff;
+    background: #000000;
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: ;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus {
+    outline-style: none;
 }
