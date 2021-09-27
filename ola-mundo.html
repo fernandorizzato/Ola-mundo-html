@@ -14,6 +14,14 @@
             alert("Olá, mundo!");
         }
 
+        function textChange() {
+
+            let input = document.getElementById("meuinput");
+            let p = document.getElementById("paragraph")
+
+            p.textContent = input.value;
+        }
+
     </script>
 </head>
 
@@ -22,19 +30,19 @@
         <h1>Olá, mundo!</h1>
         <h2>Subtítulo</h2>
         <h3>Menor ainda</h3>
-        <p>Paragráfo teste teste teste teste teste</p>
+        <p id="paragraph">Paragráfo teste teste teste teste teste</p>
         <span>Texto solto na página</span>
     </div>
     <img src="download.jpg" alt="">
     <div>
         <a href="https://google.com.br">Link para o Google</a>
-        <input type="date" />
+        <input id="meuinput" type="text" oninput="textChange()" />
         <select>
             <option>Opção 1</option>
             <option>Opção 2</option>
             <option>Opção 3</option>
         </select>
-        <button onclick="clickNoBotao">Botão</button>
+        <button onclick="clickNoBotao()">Botão</button>
     </div>
 </body>
 
